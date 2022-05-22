@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/nio
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/nio/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/motorola/nio/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/motorola/nio/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/motorola/nio/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -159,3 +160,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nio/proprietary/vendor/lib64/libvidhance_horizon_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_horizon_correction.so \
     vendor/motorola/nio/proprietary/vendor/lib64/libvidhance_stabilizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance_stabilizer.so \
     vendor/motorola/nio/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
+    com.android.hotwordenrollment.common.util
